@@ -1,4 +1,10 @@
+@font-face {
+    font-family: "DotGothic16";
+    src: url(Fonts/DotGothic16-Regular.ttf);
+}
+
 body{
+    font-family: "DotGothic16", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: white;
@@ -23,6 +29,17 @@ header{
 }
 header img{ /*logo*/
     width: 200px;
+}
+header a{
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    transition: transform .3s ease-in-out;
+}
+header a:hover{
+    transform: translateY(-15px) scale(1.1);
 }
 .seection{
     display: grid;
