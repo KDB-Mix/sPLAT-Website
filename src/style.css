@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+#bg{
+    background-image: url("assets/Screenshot1.png");
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-position: center;
+    background-size: cover;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+header img{ /*logo*/
+    width: 200px;
+}
+.seection{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-areas: 'a b';
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #424242;
+}
+.seection p{
+    grid-area: a;
+}
+.seection img{
+    width: 100%;
+    grid-area: b;
+    transition: transform .3s ease-in-out;
+}
+.seection img:hover{
+    transform: translateX(-40%) scale(1.7);
+}
+@media (max-width:700px){
+    .seection{
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
