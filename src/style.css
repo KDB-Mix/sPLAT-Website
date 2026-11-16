@@ -30,7 +30,7 @@ header{
 header img{ /*logo*/
     width: 200px;
 }
-header a{
+header>a{
     padding: 10px 15px;
     text-decoration: none;
     background-color: aliceblue;
